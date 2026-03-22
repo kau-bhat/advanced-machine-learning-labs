@@ -16,7 +16,7 @@ def generate_linear_data(n_samples=100):
 def generate_overlapping_data(n_samples=100):
     X, y = make_blobs(
         n_samples=n_samples,
-        centers=1,
+        centers=2,
         random_state=42,
         cluster_std=3
     )

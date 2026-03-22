@@ -1,6 +1,6 @@
-Error: 
-Cause: 
-Fix: 
+Error: ValueError: The number of classes has to be greater than one; got 1 class
+Cause: In data.py generate_overlapping_data(), make_blobs is called with centers=1, resulting in only 1 unique class, but SVM requires >=2 classes to train.
+Fix: Changed centers=1 to centers=2 in generate_overlapping_data() in labs/lab02_kernel_matrix_and_svm/data.py
 
 -------------------------------------
 
